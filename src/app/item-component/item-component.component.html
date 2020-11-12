@@ -1,0 +1,13 @@
+<div
+  class="row"
+  style="flex-direction: row; background-color: white; margin: 1%"
+>
+  <img
+    src="assets/images/{{ path | defaultImage }}"
+    class="avatarimg"
+    (click)="sendData()"
+    
+    alt="image loading please wait"
+  />
+  <p class="avatarname">{{ nameItem }}</p>
+</div>

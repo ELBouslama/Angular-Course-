@@ -1,0 +1,10 @@
+<div class="row">
+<div class="col-6">
+    <app-liste-component (sendDatatoCV)="processData($event)"></app-liste-component>
+</div>
+
+<div class="col-6">
+    <app-card  [name]="namefromItem" [path]="pathfromItem" [description]="descfromItem"></app-card>
+</div>
+
+</div>

@@ -1,0 +1,14 @@
+.card { 
+    background-color:white;
+    margin: 3%;
+    padding: 1%;
+    flex-direction: row;
+  
+
+    
+}
+
+.remove {
+    margin-left: 5%;
+}
+

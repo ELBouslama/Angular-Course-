@@ -1,0 +1,5 @@
+<div  class="form-group" [style.background-color]="defaultcolor" > 
+    <label for="couleur">Votre couleur</label>
+    <input type="color" name="colorpick"  class="form-control" [(ngModel)]='defaultcolor'> 
+    <button class="btn btn-primary" (click)="reset()">Reset Color</button>
+</div>

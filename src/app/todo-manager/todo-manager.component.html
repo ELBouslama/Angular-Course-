@@ -1,0 +1,36 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <ul>
+        <li *ngFor="let todo of todos ; let i = index" class="card">
+          <p >{{ todo.name }} : {{ todo.contenu }} </p>
+          <i   style="padding-left: 3%" class="fa fa-trash fa-2x" (click)="removeTodo(i)"></i>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <div class="form-group">
+        <label for="name">Name :</label>
+        <input type="text" class="form-control" id="name" [(ngModel)]="name" />
+      </div>
+
+      <div class="form-group">
+        <label for="contenu">Contenu :</label>
+        <textarea
+          class="form-control"
+          id="contenu"
+          rows="3"
+          [(ngModel)]="contenu"
+        ></textarea>
+      </div>
+      <button
+        [disabled]="getValid()"
+        (click)="addTodo(name, contenu)"
+        type="button"
+        class="btn btn-primary"
+      >
+        Add Todo
+      </button>
+    </div>
+  </div>
+</div>
